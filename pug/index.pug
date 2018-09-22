@@ -1,0 +1,63 @@
+extends layout/blank_layout
+
+block css
+  link(href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css", rel="stylesheet")
+  link(href="/css/style.css", rel="stylesheet")
+
+block view
+  animated.fadein
+    h2
+      form#fs-image
+        a(href='http://www.td.com')
+          p
+            img(src='TD_logo.png' atl='TD_logo' style='height:100px;width:100px;')
+    form#msform
+      fieldset
+        h2.fs-title Get Started!
+        h3.fs-subtitle Child Planner
+        input(type='text' name='boyName' placeholder='Boy Name')
+        input(type='text' name='girlName' placeholder='Girl Name')
+        input.next.action-button(type='button' name='next' value='Next')
+      fieldset
+        h2.fs-title Ages: 0 - 3
+        h3.fs-subtitle This is step 1!
+        input(type='text' name='email' placeholder='Daycare')
+        input(type='password' name='pass' placeholder='Pre-school')
+        input.previous.action-button(type='button' name='previous' value='Previous')
+        input.next.action-button(type='button' name='next' value='Next')
+      fieldset
+        h2.fs-title Ages: 4 - 7
+        h3.fs-subtitle Keep it Up!
+        input(type='text' name='twitter' placeholder='School')
+        input(type='text' name='facebook' placeholder='Sports')
+        input(type='text' name='gplus' placeholder='Lessons')
+        input(type='text' name='gplus' placeholder='Daycare')
+        input.previous.action-button(type='button' name='previous' value='Previous')
+        input.next.action-button(type='button' name='next' value='Next')
+      fieldset
+        h2.fs-title Ages: 8 - 13
+        h3.fs-subtitle Almost There!
+        input(type='text' name='fname' placeholder='School')
+        input(type='text' name='lname' placeholder='Sports')
+        input(type='text' name='phone' placeholder='Lessons')
+        input.previous.action-button(type='button' name='previous' value='Previous')
+        input.next.action-button(type='button' name='next' value='Next')
+      fieldset
+        h2.fs-title Ages: 14-18
+        h3.fs-subtitle Final Steps!
+        input(type='text' name='twitter' placeholder='School')
+        input(type='text' name='facebook' placeholder='Sports')
+        input(type='text' name='gplus' placeholder='Tutoring')
+        input(type='text' name='gplus' placeholder='Driving')
+        input.previous.action-button(type='button' name='previous' value='Previous')
+        input.next.action-button(type='button' name='next' value='Submit')
+      fieldset
+        h2.fs-title All Done!
+        h3.fs-subtitle Child Planner Complete!
+        h3.fs-subtitle Cost Placeholder
+        input.previous.action-button(type='button' name='previous' value='Make Changes')
+
+block script
+  script(src='/node_modules/jquery-easing/dist/jquery.easing.1.3.umd.min.js')
+  script(src='js/index.js')
+  

@@ -1,0 +1,14 @@
+- var ajax = true
+doctype html
+html(lang='en')
+  head
+    include ../partials/head.pug
+    block css
+  body.app.header-fixed.sidebar-fixed.aside-menu-fixed
+    include ../partials/header.pug
+    .app-body
+      main(class='main')
+        block view
+    include ../partials/scripts.pug
+    block script
+
